@@ -1,0 +1,105 @@
+.footer {
+    font-size: 14px;
+    padding: 20px 0;
+}
+
+.footerList {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1.5fr;
+    column-gap: 10px;
+}
+
+.footerElem {
+    margin-bottom: 20px;
+}
+
+.elemListSecond {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 52px;
+}
+
+
+.elemTitle {
+    color: #656566;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.elemList_elem {
+    margin-bottom: 10px;
+}
+
+.footerElem:last-child {
+    text-align: right;
+}
+
+.container {
+    display: grid;
+}
+
+.list {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.phoneNumber {
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+
+.listElem {
+    margin-left: 14px;
+}
+
+.list {
+    margin-bottom: 23px;
+}
+
+.adress {
+    margin-bottom: 70px;
+}
+
+.welbexPolitic {
+    text-decoration: underline;
+}
+
+.elemList_elem_Mobile {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .footerList {
+        grid-template-columns: 1fr;
+    }
+    .footerElem:last-child {
+        text-align: left;
+    }
+    .list {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .listElem {
+        margin-left: 0;
+        margin-right: 14px;
+    }
+    .elemList_elem_Mobile {
+        display: block;
+    }
+    .elemList_elem_Desk {
+        display: none;
+    }
+    .elemListSecond {
+        grid-template-columns: 1fr 1.5fr;
+    }
+    .phoneNumber {
+        margin-bottom: 10px;
+    }
+    .list {
+        margin-bottom: 10px;
+    }
+    .adress {
+        margin-bottom: 50px;
+    }
+}

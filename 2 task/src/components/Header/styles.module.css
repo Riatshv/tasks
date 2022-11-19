@@ -1,0 +1,108 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0;
+    margin-bottom: 90px;
+    flex-wrap: wrap;
+}
+
+.headerLeft {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.headerList {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.headerListElem {
+    margin-right: 30px;
+}
+
+.logo {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.logoSvgTxt {
+    margin-left: 10px;
+}
+
+.logoContainer {
+    width: 150px;
+    margin-right: 53px;
+    margin-bottom: 20px;
+}
+
+.logoText {
+    font-size: 10px;
+}
+
+/* Ниже свойства информации */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.listElem {
+    margin-right: 34px;
+}
+
+.phoneNumber {
+    margin-right: 48px;
+    min-width: 130px;
+    margin-bottom: 30px;
+}
+
+.adress {
+    display: none;
+}
+
+.welbex {
+    display: none;
+}
+
+@media screen and (max-width: 320px) {
+    .header {
+        padding: 20px 0;
+        flex-wrap: wrap;
+        margin-bottom: 0;
+    }
+    .logoContainer {
+        display: none;
+    }
+    .headerLeft {
+        width: 100%;
+    }
+    .headerNav {
+        width: 100%;
+    }
+    .headerList {
+        width: 100%;
+        margin-bottom: 0;
+        justify-content: space-between
+    }
+    .headerListElem {
+        font-size: 12px;
+        text-transform: uppercase;
+        margin-right: 5px;
+    }
+    .headerListElem:last-child {
+        display: none;
+    }
+    .phoneNumber {
+        display: none;
+    }
+    .listElem {
+        display: none;
+    }
+}

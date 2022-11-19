@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+}
+
+.list {
+    display: flex;
+}
+
+.listElem {
+    margin-right: 34px;
+}
+
+.phoneNumber {
+    margin-right: 48px;
+}

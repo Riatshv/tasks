@@ -1,0 +1,85 @@
+.title {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.moreInformation {
+    text-align: right;
+    width: 291px;
+    font-size: 18px;
+    margin-bottom: 145px;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: 131px 131px;
+    column-gap: 31px;
+    row-gap: 30px;
+    margin-bottom: 60px;
+}
+
+.listMobile {
+    display: none;
+    font-size: 13px;
+}
+
+.listMobile .elem{
+    display: flex;
+    align-items: center;
+
+}
+
+.listMobile .elem::before {
+    display: block;
+    content: "";
+    width: 10px;
+    height: 1px;
+    background: #FCB045;
+    background: linear-gradient(to right, #FCB045 0%, #FF3F78 100%);
+    margin-right: 5px;
+}
+
+.elemTitle {
+    text-transform: uppercase;   
+    margin-bottom: 6px;
+}
+
+.elemInfo {
+    font-size: 16px;
+}
+
+.button {
+    padding: 20px 35px;
+    font-size: 16px;
+    background-color: #4077F3;
+    color: white;
+    border: none;
+}
+
+@media screen and (max-width: 320px) {
+    .moreInformation {
+        text-align: left;
+    }
+    .mobileText {
+        text-transform: lowercase;
+    }
+    .list {
+        display: none;
+        column-gap: 10px;
+        row-gap: 14px;
+        grid-template-columns: 1fr 1.5fr;
+        margin-bottom: 0;
+    }
+    .listMobile {
+        display: grid;
+    }
+    .button {
+        display: none;
+    }
+    .moreInformation {
+        margin-bottom: 55px;
+    }
+    .title {
+        margin-bottom: 20px;
+    }
+}
